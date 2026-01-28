@@ -1,23 +1,23 @@
 package com.educate.creationofdatabase.domain.model;
 
 public class PensionFunds {
-    private Integer id;
+    private Long id;
     private String name;
 
     public PensionFunds() {
 
     }
 
-    public PensionFunds(Integer id, String name) {
+    public PensionFunds(Long id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

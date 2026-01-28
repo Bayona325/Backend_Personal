@@ -7,8 +7,8 @@ import com.educate.creationofdatabase.domain.model.Persons;
 
 public interface PersonsRepositoryPort {
     List<Persons> findAll();
-    Optional<Persons> findById(Long id);
+    Optional<Persons> findById(String id);
     Persons save(Persons persons);
-    Optional<Persons> update(Long id, Persons persons);
-    Optional<Persons> deleteById(Long id);
+    Optional<Persons> update(String id, Persons persons);
+    Optional<Persons> deleteById(String id);
 }

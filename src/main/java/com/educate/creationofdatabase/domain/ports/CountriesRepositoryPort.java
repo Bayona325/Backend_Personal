@@ -7,8 +7,8 @@ import com.educate.creationofdatabase.domain.model.Countries;
 
 public interface CountriesRepositoryPort {
     List<Countries> findAll();
-    Optional<Countries> findById(Long id);
+    Optional<Countries> findById(String id);
     Countries save(Countries countries);
-    Optional<Countries> update(Long id, Countries countries);
-    Optional<Countries> deleteById(Long id);
+    Optional<Countries> update(String id, Countries countries);
+    Optional<Countries> deleteById(String id);
 }

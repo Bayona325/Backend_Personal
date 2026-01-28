@@ -3,19 +3,19 @@ package com.educate.creationofdatabase.domain.model;
 import java.time.LocalDate;
 
 public class Employees {
-    private Integer id;
+    private Long id;
     private String personId;
     private LocalDate dateBirth;
-    private Integer epsId;
-    private Integer arlId;
-    private Integer pensionfundId;
-    private Integer typeemployeeId;
+    private Long epsId;
+    private Long arlId;
+    private Long pensionfundId;
+    private Long typeemployeeId;
 
     public Employees() {
 
     }
 
-    public Employees(Integer id, String personId, LocalDate dateBirth, Integer epsId, Integer arlId, Integer pensionfundId, Integer typeemployeeId) {
+    public Employees(Long id, String personId, LocalDate dateBirth, Long epsId, Long arlId, Long pensionfundId, Long typeemployeeId) {
         this.id = id;
         this.personId = personId;
         this.dateBirth = dateBirth;
@@ -25,11 +25,11 @@ public class Employees {
         this.typeemployeeId = typeemployeeId;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -49,35 +49,35 @@ public class Employees {
         this.dateBirth = dateBirth;
     }
 
-    public Integer getEpsId() {
+    public Long getEpsId() {
         return epsId;
     }
 
-    public void setEpsId(Integer epsId) {
+    public void setEpsId(Long epsId) {
         this.epsId = epsId;
     }
 
-    public Integer getArlId() {
+    public Long getArlId() {
         return arlId;
     }
 
-    public void setArlId(Integer arlId) {
+    public void setArlId(Long arlId) {
         this.arlId = arlId;
     }
 
-    public Integer getPensionfundId() {
+    public Long getPensionfundId() {
         return pensionfundId;
     }
 
-    public void setPensionfundId(Integer pensionfundId) {
+    public void setPensionfundId(Long pensionfundId) {
         this.pensionfundId = pensionfundId;
     }
 
-    public Integer getTypeemployeeId() {
+    public Long getTypeemployeeId() {
         return typeemployeeId;
     }
 
-    public void setTypeemployeeId(Integer typeemployeeId) {
+    public void setTypeemployeeId(Long typeemployeeId) {
         this.typeemployeeId = typeemployeeId;
     }
     

@@ -7,8 +7,8 @@ import com.educate.creationofdatabase.domain.model.Stateorregions;
 
 public interface StateorregionsRepositoryPort {
     List<Stateorregions> findAll();
-    Optional<Stateorregions> findById(Long id);
+    Optional<Stateorregions> findById(String code);
     Stateorregions save(Stateorregions stateorregions);
-    Optional<Stateorregions> update(Long id, Stateorregions stateorregions);
-    Optional<Stateorregions> deleteById(Long id);
+    Optional<Stateorregions> update(String code, Stateorregions stateorregions);
+    Optional<Stateorregions> deleteById(String code);
 }
