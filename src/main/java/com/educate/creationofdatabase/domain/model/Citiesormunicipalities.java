@@ -1,7 +1,7 @@
 package com.educate.creationofdatabase.domain.model;
 
 public class Citiesormunicipalities {
-    private Integer id;
+    private Long id;
     private String name;
     private String stateregId;
     private String code;
@@ -10,18 +10,18 @@ public class Citiesormunicipalities {
 
     }
 
-    public Citiesormunicipalities(Integer id, String name, String stateregId, String code) {
+    public Citiesormunicipalities(Long id, String name, String stateregId, String code) {
         this.id = id;
         this.name = name;
         this.code = code;
         this.stateregId = stateregId;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
