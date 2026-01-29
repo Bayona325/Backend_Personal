@@ -1,5 +1,9 @@
 package com.educate.creationofdatabase.infrastructure.adapter.out.repositories;
 
-public interface JpaArlRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.educate.creationofdatabase.infrastructure.adapter.out.entities.ArlEntity;
+
+public interface JpaArlRepository extends JpaRepository<ArlEntity,Long> {
 
 }
