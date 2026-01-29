@@ -7,8 +7,8 @@ import com.educate.creationofdatabase.domain.model.Companies;
 
 public interface CompaniesRepositoryPort {
     List<Companies> findAll();
-    Optional<Companies> findById(String id);
+    Optional<Companies> findById(String nui);
     Companies save(Companies companies);
-    Optional<Companies> update(String id, Companies companies);
-    Optional<Companies> deleteById(String id);
+    Optional<Companies> update(String nui, Companies companies);
+    Optional<Companies> deleteById(String nui);
 }
