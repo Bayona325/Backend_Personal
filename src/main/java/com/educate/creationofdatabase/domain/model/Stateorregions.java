@@ -1,19 +1,19 @@
 package com.educate.creationofdatabase.domain.model;
 
 public class Stateorregions {
+
     private String code;
     private String name;
-    private String countryId;
+    private Country country;
     private String code1;
 
     public Stateorregions() {
-
     }
 
-    public Stateorregions(String code, String name, String countryId, String code1) {
+    public Stateorregions(String code, String name, Country country, String code1) {
         this.code = code;
         this.name = name;
-        this.countryId = countryId;
+        this.country = country;
         this.code1 = code1;
     }
 
@@ -33,12 +33,12 @@ public class Stateorregions {
         this.name = name;
     }
 
-    public String getCountryId() {
-        return countryId;
+    public Country getCountry() {
+        return country;
     }
 
-    public void setCountryId(String countryId) {
-        this.countryId = countryId;
+    public void setCountry(Country country) {
+        this.country = country;
     }
 
     public String getCode1() {
@@ -48,6 +48,4 @@ public class Stateorregions {
     public void setCode1(String code1) {
         this.code1 = code1;
     }
-
-    
 }

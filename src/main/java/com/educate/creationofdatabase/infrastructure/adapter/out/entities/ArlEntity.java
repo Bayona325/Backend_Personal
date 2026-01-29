@@ -1,5 +1,6 @@
 package com.educate.creationofdatabase.infrastructure.adapter.out.entities;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -9,14 +10,15 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
 
 @Entity
-@Table(name="arls")
+@Table(name="arl")
 public class ArlEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
     @NotEmpty
-    @Size(min=1, max=60)
+    @Size(min = 1, max = 60)
+    @Column(length = 60, nullable = false)
     private String name;
 
     public ArlEntity() {
